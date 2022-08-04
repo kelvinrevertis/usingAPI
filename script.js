@@ -8,7 +8,7 @@ const inputForm =(address)=>{
 }
 const searchCep = async()=>{   
     const valueCep = cep.value
-    const url = `http://viacep.com.br/ws/${valueCep}/json/`
+    const url = `https://viacep.com.br/ws/${valueCep}/json/`
     const data = await  fetch(url)
     const address = await data.json()
     inputForm(address)
